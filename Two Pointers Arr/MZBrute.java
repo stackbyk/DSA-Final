@@ -1,25 +1,24 @@
-package Two Pointers;
-import java.uitl.*;
-public class Move Zeroes Brute {
+import java.util.*;
+public class MZBrute {
     public static void MoveZeroes(int[]arr){
         int n=arr.length;
-        int[]temp=new int[n];
+        int[]temp=new int[n]; //by default java gives the value to empty arr as 0's 
         int j=0;
-        
-        // 1.Create a temp arr-> store non zero elems
+
+        //1.Group non zero elems
         for(int i=0;i<n;i++){
             if(arr[i]!=0){
                 temp[j]=arr[i];
-                j++; //increment to move on
+                j++;
             }
         }
-        // 2.copy temp arr to original arr
+        //2.copy temp to original arr
         for(int i=0;i<n;i++){
             arr[i]=temp[i];
         }
     }
-    public static void main(String[]args){
-        int[]arr={0, 1, 0, 3, 12};
+    public static void main(String[] args) {
+        int[]arr={1, 3, 12, 0, 0};
         MoveZeroes(arr);
         System.out.println("The new array is:"+Arrays.toString(arr));
     }
