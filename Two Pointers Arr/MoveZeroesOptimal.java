@@ -19,3 +19,8 @@ public class MoveZeroesOptimal {
         System.out.println("the new array is:"+Arrays.toString(arr));
     }
 }
+
+/*
+TC = 0(N)->for loop
+S.C = 0(1)->no extra space
+*/
