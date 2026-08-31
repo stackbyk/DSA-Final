@@ -62,7 +62,6 @@ public class ThreeSum {
         int[] nums = {-1, 0, 1, 2, -1, -4};
 
         List<List<Integer>> result = threeSum(nums);
-
-        System.out.println("Triplets with sum 0: " + result);
+         System.out.println("Triplets with sum 0: " + result);
     }
 }
